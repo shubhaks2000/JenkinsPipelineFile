@@ -1,1 +1,17 @@
-hello my new job
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'Hello test'
+            }
+        }
+        
+    }
+}
